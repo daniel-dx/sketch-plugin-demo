@@ -1,8 +1,20 @@
 import BrowserWindow from 'sketch-module-web-view'
 import { getWebview } from 'sketch-module-web-view/remote'
 import UI from 'sketch/ui'
+var Document = require('sketch/dom').Document
 
 const webviewIdentifier = 'sketch-plugin-demo.webview'
+
+// export default function () {
+//   let str = NSMutableString.alloc().init()
+//   let pointer = MOPointer.alloc().initWithValue(str)
+
+//   str.setString('Hello Sketch')
+//   console.log(pointer.value())
+
+//   str.appendString(' 👋')
+//   console.log(pointer.value())
+// }
 
 export default function () {
   const options = {
